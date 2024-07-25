@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+.custom-img {
+  background-image: url("https://images.unsplash.com/photo-1417733403748-83bbc7c05140?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+/* Default (light mode) */
+:root {
+  --color-custom-text: #000000; /* For light mode text */
+  --color-custom-bg: #ffffff;   /* For light mode background */
+  --color-custom-border: #000000;   /* For light mode border */
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --color-custom-text: #ffffff; /* For dark mode text */
+  --color-custom-bg: #000000;   /* For dark mode background */
+  --color-custom-border: #ffffff;   /* For dark mode border */
+}
+
+.avatar-class-name {
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjust minmax for card width */
+  gap: 20px; /* Adjust the gap between cards */
+  padding: 20px;
+}
+
+
+
